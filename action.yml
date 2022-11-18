@@ -1,6 +1,6 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'gs-action-sphynx-docs'
+description: 'GitHub Action for building sphynx docs'
+author: 'monkeypants'
 inputs: 
   myInput:
     description: 'Input to use'
