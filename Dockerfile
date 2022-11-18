@@ -1,7 +1,9 @@
-FROM alpine:3.10
+# in your Dockerfile
+FROM sphinxdoc/sphinx
 
-COPY LICENSE README.md /
+WORKDIR /docs
+ADD requirements.txt /docs
+RUN pip3 install -r requirements.txt
 
 COPY entrypoint.sh /entrypoint.sh
-
 ENTRYPOINT ["/entrypoint.sh"]
